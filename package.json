@@ -1,0 +1,22 @@
+{
+  "name": "something-awesome",
+  "version": "1.0.0",
+  "description": "My Something Awesome for COMP6841",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CurePeach/something-awesome.git"
+  },
+  "author": "Clarissa Tatang",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CurePeach/something-awesome/issues"
+  },
+  "homepage": "https://github.com/CurePeach/something-awesome#readme",
+  "dependencies": {
+    "phaser": "^3.52.0"
+  }
+}
