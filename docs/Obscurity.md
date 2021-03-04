@@ -11,3 +11,15 @@ In the story of Sleeping Beauty, there were two secrets. The world and as a resu
 **Recommendations for the defender**:
 
 -
+
+## Rapunzel
+
+In Rapunzel, the princess was hidden from the world and the world was hidden from the princess. 
+
+**Recommendations for the attacker**:
+
+-
+
+**Recommendations for the defender**:
+
+- 
