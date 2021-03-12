@@ -1,3 +1,6 @@
+/**
+ * Configuration file
+ */
 
 const config = {
   width: 800,
