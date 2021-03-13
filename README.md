@@ -12,6 +12,8 @@
 
 4. Preparing documentation - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeProgress0/
 
+5. Deciding on levels - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/Week4SomethingAwesome/
+
 <br>
 
 ## How to set up for testing
