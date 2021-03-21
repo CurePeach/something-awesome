@@ -30,3 +30,28 @@ The good fairies could have done better as caretakers.
 
 - They were the ones who asked to take the cursed princess away from her parents to protect her. However, they fed her lies by hiding their true identities and hers. As she was growing up, it would have been fair game to tell her why she was hidden away. Once the secret comes out, she would have lost her trust in the good fairies and gotten herself into trouble much faster. By trusting the princess with the information, they would have equipped her to defend herself.
 - Their use of magic towards the princess' 16th birthday was what led the evil fairy to find them so they could've held on for a little bit longer and the situation would have been safer. Instead of letting the princess roam the forest, they could've asked her to help them and so, they wouldn't be able to use magic because they were pretending to be peasants.
+
+## The Love Story of Eros and Psyche
+
+Psyche was a beautiful and kind princess who was loved by all but from afar. Many people would come and admire her beauty but they wouldn't befriend her. Somewhere along the line, they began treating her like the Goddess of Love and Beauty by giving her offerings and praying to her. This made Aphrodite mad so she sent her son Eros after Psyche to punish her for trying to usurp Aphrodite. Instead, Eros fell in love with her, protected her from Aphrodite and eventually married her. 
+
+When Eros married Psyche, she received a mansion for a home, invisible servants and protection from Aphrodite. Every night, Eros would come home and they would sleep together but she was never allowed to know who he was. 
+
+**Recommendations for the attacker**:
+
+In the myth, Psyche had two sisters who were extremely jealous of her marriage. Psyche invited them over because she trusted them and they decided they would sabotage her because they never liked her anyway because of her beauty, and now her marriage. They had both ended up miserable with husbands they didn't like so they wanted Psyche's life.
+
+- In the myth, they socially engineered Psyche to look at his face while sleeping. They convinced her that he might be a monster and that's why she couldn't see him, because he was scared she would leave him. They framed it as they were worried about her and that's why she should take their advice. This ends up getting Psyche to betray Eros instead of her sisters having any tangible involvement, so it gave the sisters hope they would have a chance with Psyche's husband.
+- Psyche really loved her sisters until they betrayed her so I think they could've abused this trust more. If they asked Psyche to stay with her overnight in order to protect her from the husband she had never seen before, they could've sabotaged the relationship here to make Psyche miserable, but they would still be miserable.
+- Another point of attack would be to guilt Psyche into giving up her life. The sisters were cruel and miserable. They would do anything to get a good life and they believed they deserved the riches at the house Psyche lived in. Psyche was kind-hearted and would probably do it and if not, she would give them a decent amount of the riches she had.
+
+Another attacker would be Aphrodite who wanted to get vengance on Psyche for stealing her position as the Goddess of Love and Beauty. 
+
+- She could've interrogated Eros and asked for the details of Psyche's life with the punishment. This would lead to Eros creating a web of lies and Aphrodite would be able to tear it apart bit by bit to find the secret he's hiding.
+- Aphrodite could've asked to watch Eros punish Psyche. This would have made it more difficult for Eros to protect Psyche and if he didn't love her enough, the punishment would have been completed and none of this story would have happened.
+
+**Recommendations for the defender**:
+
+In this story, Eros is truly the only defender. This is because he wants to keep the secret and keep his marriage and love secure.
+
+- If everything disappears when she looked at him, couldn't Eros have just offered himself through the other four senses to Psyche? Eros could have said, "Put on this blindfold" and I will let you touch my face. 
