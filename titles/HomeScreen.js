@@ -31,7 +31,7 @@ class HomeScreen extends Phaser.Scene {
     this.add.text(210, 490, "Security through obscurity");
     stoLink.setInteractive();
     stoLink.on("pointerdown", () => {
-      console.log("Clicked!");
+      this.scene.start("SecurityThroughObscurity");
     });
   }
 }
