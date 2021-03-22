@@ -12,24 +12,27 @@ In the story of Sleeping Beauty, the main secret was the curse placed on the pri
 
 In fairytales, fate is everything so there was no doubt in the story that the princess would eventually fall asleep and be woken but let's discount that. Let's say the evil fairy could abuse this situation.
 
-- She has magic so she could have used it to somehow locate either the good fairies or the princess. However, three fairies probably overpowers one so this might not have been feasible.
+- The evil fairy was a powerful fairy and could've tried to best them in combat. Since they were hidden in secret away from the rest of the world, it was only the evil fairy versus the good fairies. There was no way backup could be sent and she also had the element of surprise on her side. There is, however, the requirement of finding the good fairies' secret hideout.
 - The evil fairy could have cursed the regular people of the kingdom leading to lots and lots of death so no one would have been left to save the princess. Since the princess was being kept hidden and the good fairies were taking care of her, they would have no idea what would be going on in the outside world. If the princess happened to escape and explore like she did in the movie, she might have also been accidentally killed which is what the evil fairy ultimately wants.
-- Similar to the story of Snow White, the evil fairy could dress up as a stranger and coax the princess into the curse. Since the princess has had no contact with strangers and has no idea of any of the possible dangers to her life because of the curse, this is a relatively easy strategy to abuse her lack of knowledge. There is, however, the requirement of finding the good fairies' secret hideout.
+- Similar to the story of Snow White, the evil fairy could dress up as a stranger and coax the princess into the curse. Since the princess has had no contact with strangers and has no idea of any of the possible dangers to her life because of the curse, this is a relatively easy strategy to abuse her lack of knowledge. Similar to the first recommendation, she would have to find the hideout first.
 
 **Recommendations for the defender**:
 
 There are multiple defenders in this situation - the parents and the good fairies.
 
-The parents' strategy to defending from the curse was 1) burning all the spindles so there were no spindles to fit the curse and 2) hiding the princess away from the evil fairy so she couldn't pull any more nasty tricks. What else could they have done?
+The parents' strategy to defending from the curse was 1) burning all the spindles so there were no spindles to fit the curse and 2) hiding the princess away from the evil fairy so she couldn't pull any more nasty tricks. By hiding the princess, they have bought themselves time to act and take initiative. Instead of sitting around waiting for the princess to come back, what could they have done?
 
-- They could've gone hunting for the evil fairy. Maybe killing the evil fairy would have automatically lifted the curse because the magic is innately tied with the one who wields it. It wouldn't hurt to try.
+- They could've gone hunting for the evil fairy. Maybe killing the evil fairy would have automatically lifted the curse because the magic is innately tied with the one who wields it. It wouldn't hurt to try. 
 - They could've negotiated with the evil fairy. What would she want in return for their daughter's life? The parents were royalty so they could've offered her fame and riches.
-- Instead of sending their child away, they could have educated her instead of kept things secret from her. A good education leads to good decision making which leads to a responsible princess who can take care of herself. I also believe it was unfair of her parents to take her away from her life.
 
 The good fairies could have done better as caretakers.
 
 - They were the ones who asked to take the cursed princess away from her parents to protect her. However, they fed her lies by hiding their true identities and hers. As she was growing up, it would have been fair game to tell her why she was hidden away. Once the secret comes out, she would have lost her trust in the good fairies and gotten herself into trouble much faster. By trusting the princess with the information, they would have equipped her to defend herself.
 - Their use of magic towards the princess' 16th birthday was what led the evil fairy to find them so they could've held on for a little bit longer and the situation would have been safer. Instead of letting the princess roam the forest, they could've asked her to help them and so, they wouldn't be able to use magic because they were pretending to be peasants.
+
+This final recommendation is to not use security through obscurity at all.
+
+- Instead of sending their child away, they could have educated her instead of kept things secret from her. A good education leads to good decision making which leads to a responsible princess who can take care of herself. I also believe it was unfair of her parents to take her away from her life.
 
 ## The Love Story of Eros and Psyche
 
@@ -41,9 +44,9 @@ When Eros married Psyche, she received a mansion for a home, invisible servants 
 
 In the myth, Psyche had two sisters who were extremely jealous of her marriage. Psyche invited them over because she trusted them and they decided they would sabotage her because they never liked her anyway because of her beauty, and now her marriage. They had both ended up miserable with husbands they didn't like so they wanted Psyche's life.
 
-- In the myth, they socially engineered Psyche to look at his face while sleeping. They convinced her that he might be a monster and that's why she couldn't see him, because he was scared she would leave him. They framed it as they were worried about her and that's why she should take their advice. This ends up getting Psyche to betray Eros instead of her sisters having any tangible involvement, so it gave the sisters hope they would have a chance with Psyche's husband.
-- Psyche really loved her sisters until they betrayed her so I think they could've abused this trust more. If they asked Psyche to stay with her overnight in order to protect her from the husband she had never seen before, they could've sabotaged the relationship here to make Psyche miserable, but they would still be miserable.
-- Another point of attack would be to guilt Psyche into giving up her life. The sisters were cruel and miserable. They would do anything to get a good life and they believed they deserved the riches at the house Psyche lived in. Psyche was kind-hearted and would probably do it and if not, she would give them a decent amount of the riches she had.
+- In the myth, they manipulated Psyche to look at his face while sleeping. They abused the secret because it left a gap in Psyche's trust in Eros. They began putting thoughts into Psyche's head saying that he's probably a monster so if she saw him, she would leave him. They framed it as they were worried about her and that's why she should take their advice. This ends up getting Psyche to betray Eros. Since her sisters don't have any tangible involvement, it gave the sisters hope they would have a chance with Psyche's husband.
+- Psyche really loved her sisters until they betrayed her so I think they could've abused this trust more. If they asked Psyche to stay with her overnight in order to protect her from the husband she had never seen before, they could've sabotaged the relationship here to make Psyche miserable. However, in this situation, they would still be miserable because Eros would never go to them since they ruined his relationship.
+- Another point of attack would be to guilt Psyche into giving up her life. This is a plausible approach because what did Psyche have to lose? She didn't even know what Eros looked like. The sisters were cruel and miserable. They would do anything to get a good life and they believed they deserved the riches at the house Psyche lived in. Psyche was kind-hearted and would probably do it and if not, she would give them a decent amount of the riches she had.
 
 Another attacker would be Aphrodite who wanted to get vengance on Psyche for stealing her position as the Goddess of Love and Beauty. 
 
