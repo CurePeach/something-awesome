@@ -14,6 +14,8 @@
 
 5. Deciding on levels - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/Week4SomethingAwesome/
 
+6. Finalising document structure - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeDocumentsFinalisation/
+
 <br>
 
 ## How to set up for testing
