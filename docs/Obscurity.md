@@ -54,4 +54,6 @@ Another attacker would be Aphrodite who wanted to get vengance on Psyche for ste
 
 In this story, Eros is truly the only defender. This is because he wants to keep the secret and keep his marriage and love secure.
 
-- If everything disappears when she looked at him, couldn't Eros have just offered himself through the other four senses to Psyche? Eros could have said, "Put on this blindfold" and I will let you touch my face. 
+- If everything disappears when she looked at him, couldn't Eros have just offered himself through the other four senses to Psyche? Eros could have said, "Put on this blindfold" and let her touch his face so she knew he wasn't a monster. This removes the secret and it means the fact that Psyche doesn't know can't be manipulated against her.
+- He could have also proposed to her normally without the can't see what I look like thing. He could have told Aphrodite, "Psyche won't be bothering you anymore because she is in love with the most horrid thing in the world (me), and is the Goddess of the Human Soul (which is not as beautiful as you, Mother)." This means she knows that he's a god, Aphrodite doesn't care anymore and the world moves on.
+- Eros should have built trust with Psyche. He should have spent time with her and spoke with her. Psyche had never had any friends beforehand because she was extremely pretty and people were either jealous or afraid of her. If he built trust with her, she never would have betrayed his secret.
