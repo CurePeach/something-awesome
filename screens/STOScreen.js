@@ -8,6 +8,7 @@
  * Relevant tutorials:
  * - https://www.thepolyglotdeveloper.com/2020/09/switch-between-scenes-phaser-game/
  * - http://labs.phaser.io/edit.html?src=src%5Cscenes%5Cdrag%20scenes%20demo.js
+ * - https://www.stephengarside.co.uk/blog/phaser-3-center-text-in-middle-of-screen/
  */
 
 class STOScreen extends Phaser.Scene {
@@ -24,6 +25,7 @@ class STOScreen extends Phaser.Scene {
         this.WIDTH = 100;
         this.HEIGHT = 100;
         
+        this.clueObjects = [];
     }
 
     /*
@@ -38,22 +40,26 @@ class STOScreen extends Phaser.Scene {
         const testBox = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox.setInteractive();
         testBox.once("pointerup", () => this.createClue("test"));
+        this.clueObjects.push(testBox);
 
         this.used += 1;
         const testBox2 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox2.setInteractive();
         testBox2.once("pointerup", () => this.createClue("test2"));
+        this.clueObjects.push(testBox);
 
         this.used += 1;
         const testBox3 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox3.setInteractive();
         testBox3.once("pointerup", () => this.createClue("test3"));
+        this.clueObjects.push(testBox);
 
         this.used = 0;
     }
 
     update() {
         if (!this.hasQuestion && this.used == this.MAX_CLUES) {
+            this.deactivateClues();
             this.promptQuestion();
             this.hasQuestion = true;
         }
@@ -72,13 +78,16 @@ class STOScreen extends Phaser.Scene {
         this.scene.add(handle, clue, true);
     }
 
+    deactivateClues() {
+        for (const clueObject of this.clueObjects) {
+            clueObject.removeAllListeners();
+        }
+    }
+
     /**
-     * Everything becomes uninteractive and ask for an answer to the question
+     * Ask for an answer to the question
      */
     promptQuestion() {
-        console.log(this);
-        // this.destroy();
-
         const window = this.add.zone(0, 0);
         const question = new Question(window);
 
