@@ -14,21 +14,21 @@ class HomeScreen extends Phaser.Scene {
   create() {
     // Links to the different levels
     const spofLink = this.add.rectangle(400, 400, 400, 30, this.boxColour);
-    this.add.text(210, 390, "Single point of failure");
+    this.add.text(400, 400, "Single point of failure").setOrigin(0.5);
     spofLink.setInteractive();
     spofLink.on("pointerdown", () => {
       console.log("Clicked!");
     });
 
     const seLink = this.add.rectangle(400, 450, 400, 30, this.boxColour);
-    this.add.text(210, 440, "Social engineering");
+    this.add.text(400, 450, "Social engineering").setOrigin(0.5);
     seLink.setInteractive();
     seLink.on("pointerdown", () => {
       console.log("Clicked!");
     });
 
     const stoLink = this.add.rectangle(400, 500, 400, 30, this.boxColour);
-    this.add.text(210, 490, "Security through obscurity");
+    this.add.text(400, 500, "Security through obscurity").setOrigin(0.5);
     stoLink.setInteractive();
     stoLink.on("pointerdown", () => {
       this.scene.start("STOScreen");
