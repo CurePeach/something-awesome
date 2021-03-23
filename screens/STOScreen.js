@@ -82,7 +82,7 @@ class STOScreen extends Phaser.Scene {
         const window = this.add.zone(0, 0);
         const question = new Question(window);
 
-        this.scene.add("Question2", question, true);
+        this.scene.add("Question", question, true);
     }
 }
 
@@ -95,13 +95,13 @@ class Clue extends Phaser.Scene {
     }
 
     create() {
-        const text = this.add.text(this.window.x, this.window.y, this.name);
+        const text = this.add.text(this.window.x, this.window.y, this.name).setOrigin(0.5);
     }
 }
 
 class Question extends Phaser.Scene {
     constructor(window) {
-        super("Question1");
+        super("Question");
 
         this.window = window;
     }
