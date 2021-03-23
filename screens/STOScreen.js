@@ -14,12 +14,16 @@ class STOScreen extends Phaser.Scene {
     constructor() {
         super("STOScreen");
 
+        this.clueColour = 0x053D57;
         this.used = 0;
+        this.MAX_CLUES = 3;
+        this.hasQuestion = false;
+
         this.xCords = [700, 700, 700];
         this.yCords = [200, 325, 450];
         this.WIDTH = 100;
         this.HEIGHT = 100;
-        this.clueColour = 0x053D57;
+        
     }
 
     /*
@@ -31,24 +35,33 @@ class STOScreen extends Phaser.Scene {
     create() {
         this.add.text(10, 10, "Security through Obscurity");
 
-        const testBox = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, 0xfff);
+        const testBox = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox.setInteractive();
         testBox.once("pointerup", () => this.createClue("test"));
 
         this.used += 1;
-        const testBox2 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, 0xfff);
+        const testBox2 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox2.setInteractive();
         testBox2.once("pointerup", () => this.createClue("test2"));
 
         this.used += 1;
-        const testBox3 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, 0xfff);
+        const testBox3 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         testBox3.setInteractive();
         testBox3.once("pointerup", () => this.createClue("test3"));
 
         this.used = 0;
     }
 
-    
+    update() {
+        if (!this.hasQuestion && this.used == this.MAX_CLUES) {
+            this.promptQuestion();
+            this.hasQuestion = true;
+        }
+    }
+
+    /**
+     * Reveal the clue based on what was clicked
+     */
     createClue(name) {
         const handle = name;
         const window = this.add.zone(this.xCords[this.used], this.yCords[this.used]);
@@ -59,12 +72,18 @@ class STOScreen extends Phaser.Scene {
         this.scene.add(handle, clue, true);
     }
 
-    /*
+    /**
+     * Everything becomes uninteractive and ask for an answer to the question
+     */
     promptQuestion() {
-        // Everything becomes uninteractive and ask for a text response
+        console.log(this);
+        // this.destroy();
 
+        const window = this.add.zone(0, 0);
+        const question = new Question(window);
+
+        this.scene.add("Question2", question, true);
     }
-    */
 }
 
 class Clue extends Phaser.Scene {
@@ -76,7 +95,18 @@ class Clue extends Phaser.Scene {
     }
 
     create() {
-        console.log(this.window);
         const text = this.add.text(this.window.x, this.window.y, this.name);
+    }
+}
+
+class Question extends Phaser.Scene {
+    constructor(window) {
+        super("Question1");
+
+        this.window = window;
+    }
+
+    create() {
+        const text = this.add.text(this.window.x, this.window.y, "Question");
     }
 }
