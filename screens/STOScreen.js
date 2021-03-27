@@ -28,32 +28,61 @@ class STOScreen extends Phaser.Scene {
         this.clueObjects = [];
     }
 
-    /*
     preload() {
-        // Load images
+        // Images from: <SOURCE>
+        this.load.image("blue", "assets/blue.png");
+        this.load.image("green", "assets/green.png");
+        this.load.image("pink", "assets/pink.png");
+        this.load.image("orange", "assets/orange.png");
+        this.load.image("teal", "assets/teal.png");
+        this.load.image("purple", "assets/purple.png");
     }
-    */
 
     create() {
         this.add.text(10, 10, "Security through Obscurity");
 
-        const testBox = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
-        testBox.setInteractive();
-        testBox.once("pointerup", () => this.createClue("test"));
-        this.clueObjects.push(testBox);
+        // Set up birds that tell clues
+        const blueBird = this.add.image(150, 200, "blue");
+        blueBird.scale = 0.3;
+        blueBird.setInteractive();
+        blueBird.once("pointerup", () => this.createClue("blue"));
+        this.clueObjects.push(blueBird);
 
+        const greenBird = this.add.image(320, 200, "green");
+        greenBird.scale = 0.5;
+        greenBird.setInteractive();
+        greenBird.once("pointerup", () => this.createClue("green"));
+        this.clueObjects.push(greenBird);
+
+        const pinkBird = this.add.image(500, 200, "pink");
+        pinkBird.scale = 0.45;
+        pinkBird.setInteractive();
+        pinkBird.once("pointerup", () => this.createClue("pink"));
+        this.clueObjects.push(pinkBird);
+
+        const orangeBird = this.add.image(155, 400, "orange");
+        orangeBird.scale = 0.47;
+        orangeBird.setInteractive();
+        orangeBird.once("pointerup", () => this.createClue("orange"));
+        this.clueObjects.push(orangeBird);
+
+        const tealBird = this.add.image(330, 400, "teal");
+        tealBird.scale = 0.5;
+        tealBird.setInteractive();
+        tealBird.once("pointerup", () => this.createClue("teal"));
+        this.clueObjects.push(tealBird);
+
+        const purpleBird = this.add.image(490, 400, "purple");
+        purpleBird.scale = 0.51;
+        purpleBird.setInteractive();
+        purpleBird.once("pointerup", () => this.createClue("purple"));
+
+        // The boxes where the secrets go
+        const secret1 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         this.used += 1;
-        const testBox2 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
-        testBox2.setInteractive();
-        testBox2.once("pointerup", () => this.createClue("test2"));
-        this.clueObjects.push(testBox);
-
+        const secret2 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         this.used += 1;
-        const testBox3 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
-        testBox3.setInteractive();
-        testBox3.once("pointerup", () => this.createClue("test3"));
-        this.clueObjects.push(testBox);
-
+        const secret3 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
         this.used = 0;
     }
 
@@ -101,10 +130,22 @@ class Clue extends Phaser.Scene {
 
         this.name = name;
         this.window = window;
+
+        this.clues = [
+            { name: "blue", clue: "Pink is always\ntelling the truth." },
+            { name: "green", clue: "Purple says they're\nbest friends with\nthe king and queen." },
+            { name: "pink", clue: "There's a really\npretty girl in this\nforest who sings\nthe best!" },
+            { name: "orange", clue: "Those three peasants\nliving here look\nreally familiar..." },
+            { name: "teal", clue: "There's no one\nbeing hidden in\nthis forest!" },
+            { name: "purple", clue: "The prince was\njust here and\nagainst his\nparents' orders..." }            
+        ];
     }
 
     create() {
-        const text = this.add.text(this.window.x, this.window.y, this.name).setOrigin(0.5);
+        const info = this.clues.find((value, index, array) => {
+            return value.name == this.name;
+        })
+        const text = this.add.text(this.window.x, this.window.y, info.clue).setOrigin(0.5);
     }
 }
 
