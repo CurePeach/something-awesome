@@ -29,7 +29,7 @@ class STOScreen extends Phaser.Scene {
     }
 
     preload() {
-        // Images from: <SOURCE>
+        // Images from: https://www.freevector.com/cartoon-birds-vector-19557
         this.load.image("blue", "assets/blue.png");
         this.load.image("green", "assets/green.png");
         this.load.image("pink", "assets/pink.png");
