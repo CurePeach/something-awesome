@@ -11,6 +11,8 @@
  * - https://www.stephengarside.co.uk/blog/phaser-3-center-text-in-middle-of-screen/
  */
 
+import Phaser from 'phaser';
+
 class STOScreen extends Phaser.Scene {
     constructor() {
         super("STOScreen");
@@ -76,6 +78,7 @@ class STOScreen extends Phaser.Scene {
         purpleBird.scale = 0.51;
         purpleBird.setInteractive();
         purpleBird.once("pointerup", () => this.createClue("purple"));
+        this.clueObjects.push(purpleBird);
 
         // The boxes where the secrets go
         const secret1 = this.add.rectangle(this.xCords[this.used], this.yCords[this.used], this.WIDTH, this.HEIGHT, this.clueColour);
@@ -107,6 +110,9 @@ class STOScreen extends Phaser.Scene {
         this.scene.add(handle, clue, true);
     }
 
+    /**
+     * Deactivate all the unused clues
+     */
     deactivateClues() {
         for (const clueObject of this.clueObjects) {
             clueObject.removeAllListeners();
@@ -124,6 +130,9 @@ class STOScreen extends Phaser.Scene {
     }
 }
 
+/**
+ * Clue class that adds the clue to the screen
+ */
 class Clue extends Phaser.Scene {
     constructor(name, window) {
         super(name);
@@ -149,6 +158,9 @@ class Clue extends Phaser.Scene {
     }
 }
 
+/**
+ * Question class that adds the question to the screen
+ */
 class Question extends Phaser.Scene {
     constructor(window) {
         super("Question");
@@ -157,6 +169,6 @@ class Question extends Phaser.Scene {
     }
 
     create() {
-        const text = this.add.text(this.window.x, this.window.y, "Question");
+        const text = this.add.text(this.window.x, this.window.y, "Who is being hidden in the forest?");
     }
 }
