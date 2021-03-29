@@ -121,7 +121,7 @@ class STOScreen extends Phaser.Scene {
      * Ask for an answer to the question
      */
     promptQuestion() {
-        const window = this.add.zone(0, 0);
+        const window = this.add.zone(400, 300);
         const question = new Question(window);
 
         this.scene.add("Question", question, true);
@@ -139,7 +139,7 @@ class Clue extends Phaser.Scene {
         this.window = window;
 
         this.clues = [
-            { name: "blue", clue: "Pink is always\ntelling the truth." },
+            { name: "blue", clue: "The dress should\nbe blue!" },
             { name: "green", clue: "Purple says they're\nbest friends with\nthe king and queen." },
             { name: "pink", clue: "There's a really\npretty girl in this\nforest who sings\nthe best!" },
             { name: "orange", clue: "Those three peasants\nliving here look\nreally familiar..." },
@@ -168,5 +168,6 @@ class Question extends Phaser.Scene {
 
     create() {
         const text = this.add.text(this.window.x, this.window.y, "What is the name of the Disney movie?");
+        text.setOrigin(0.5);
     }
 }
