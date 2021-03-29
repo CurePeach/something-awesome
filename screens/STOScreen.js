@@ -144,7 +144,7 @@ class Clue extends Phaser.Scene {
             { name: "pink", clue: "There's a really\npretty girl in this\nforest who sings\nthe best!" },
             { name: "orange", clue: "Those three peasants\nliving here look\nreally familiar..." },
             { name: "teal", clue: "There's no one\nbeing hidden in\nthis forest!" },
-            { name: "purple", clue: "The prince was\njust here and\nagainst his\nparents' orders..." }            
+            { name: "purple", clue: "The prince was\njust here and\nhis parents were\nmad!!" }            
         ];
     }
 
@@ -167,7 +167,20 @@ class Question extends Phaser.Scene {
     }
 
     create() {
-        const text = this.add.text(this.window.x, this.window.y, "What is the name of the Disney movie?");
-        text.setOrigin(0.5);
+        const question = this.add.text(this.window.x, this.window.y, "What is the name of the Disney movie?");
+        question.setOrigin(0.5);
+
+        const answer = document.getElementById("sto-answer");
+        answer.style.position = "absolute";
+        answer.style.top = "350px";
+        answer.style.left = "300px";
+        answer.style.display = "";
+
+        answer.addEventListener("input", () => {
+            const value = answer.value;
+            if (value === "Sleeping Beauty") {
+                alert("You got the correct answer!");
+            }
+        })
     }
 }
