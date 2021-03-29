@@ -11,8 +11,6 @@
  * - https://www.stephengarside.co.uk/blog/phaser-3-center-text-in-middle-of-screen/
  */
 
-import Phaser from 'phaser';
-
 class STOScreen extends Phaser.Scene {
     constructor() {
         super("STOScreen");
@@ -75,7 +73,7 @@ class STOScreen extends Phaser.Scene {
         this.clueObjects.push(tealBird);
 
         const purpleBird = this.add.image(490, 400, "purple");
-        purpleBird.scale = 0.51;
+        purpleBird.scale = 0.4;
         purpleBird.setInteractive();
         purpleBird.once("pointerup", () => this.createClue("purple"));
         this.clueObjects.push(purpleBird);
@@ -169,6 +167,6 @@ class Question extends Phaser.Scene {
     }
 
     create() {
-        const text = this.add.text(this.window.x, this.window.y, "Who is being hidden in the forest?");
+        const text = this.add.text(this.window.x, this.window.y, "What is the name of the Disney movie?");
     }
 }
