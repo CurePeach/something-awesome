@@ -154,7 +154,7 @@ class Clue extends Phaser.Scene {
         })
 
         const style = {
-            fontSize: "13px",
+            fontSize: "12.5px",
             align: "center"
         };
         const text = this.add.text(this.window.x, this.window.y, info.clue, style).setOrigin(0.5);
