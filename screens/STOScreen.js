@@ -140,7 +140,7 @@ class Clue extends Phaser.Scene {
 
         this.clues = [
             { name: "blue", clue: "The dress should\nbe blue!" },
-            { name: "green", clue: "Purple says they're\nbest friends with\nthe king and queen." },
+            { name: "green", clue: "I still have\nnightmares about\nthat ball." },
             { name: "pink", clue: "There's a really\npretty girl in this\nforest who sings\nthe best!" },
             { name: "orange", clue: "Those three peasants\nliving here look\nreally familiar..." },
             { name: "teal", clue: "There's no one\nbeing hidden in\nthis forest!" },
@@ -164,9 +164,13 @@ class Question extends Phaser.Scene {
         super("Question");
 
         this.window = window;
+        this.bgColour = 0x053D57;
     }
 
     create() {
+        const rect = this.add.rectangle(this.window.x, this.window.y, 400, 160, this.bgColour);
+        rect.setOrigin(0.5, 0.3);
+
         const question = this.add.text(this.window.x, this.window.y, "What is the name of the Disney movie?");
         question.setOrigin(0.5);
 
