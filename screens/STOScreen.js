@@ -139,12 +139,12 @@ class Clue extends Phaser.Scene {
         this.window = window;
 
         this.clues = [
-            { name: "blue", clue: "The dress should\nbe blue!" },
-            { name: "green", clue: "I still have\nnightmares about\nthat ball." },
-            { name: "pink", clue: "There's a really\npretty girl in this\nforest who sings\nthe best!" },
-            { name: "orange", clue: "Those three peasants\nliving here look\nreally familiar..." },
-            { name: "teal", clue: "There's no one\nbeing hidden in\nthis forest!" },
-            { name: "purple", clue: "The prince was\njust here and\nhis parents were\nmad!!" }            
+            { name: "blue", clue: "The dress\nshould be\nblue!" },
+            { name: "green", clue: "I still\nhave\nnightmares\nabout that\nball." },
+            { name: "pink", clue: "There's a\nreally pretty\ngirl in this\nforest who\nsings the\nbest!" },
+            { name: "orange", clue: "Those three\npeasants\nliving here\nlook really\nfamiliar..." },
+            { name: "teal", clue: "There's no\none being\nhidden in\nthis forest!" },
+            { name: "purple", clue: "The prince\nwas just\nhere and\nhis parents\nare mad!!" }            
         ];
     }
 
@@ -152,7 +152,12 @@ class Clue extends Phaser.Scene {
         const info = this.clues.find((value, index, array) => {
             return value.name == this.name;
         })
-        const text = this.add.text(this.window.x, this.window.y, info.clue).setOrigin(0.5);
+
+        const style = {
+            fontSize: "13px",
+            align: "center"
+        };
+        const text = this.add.text(this.window.x, this.window.y, info.clue, style).setOrigin(0.5);
     }
 }
 
