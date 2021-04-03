@@ -20,6 +20,8 @@ Taskboard: https://trello.com/b/5kBcWdgd
 
 7. Starting my first sprint - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeSprint1SecurityThroughObscurity/
 
+8. Sprint 1 complete! - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeSprint1Complete/
+
 <br>
 
 ## How to set up for testing
