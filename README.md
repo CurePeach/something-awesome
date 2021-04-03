@@ -1,5 +1,7 @@
 # Something Awesome
 
+Taskboard: https://trello.com/b/5kBcWdgd
+
 <br>
 
 ## Masterlist of Blog Posts
@@ -15,6 +17,8 @@
 5. Deciding on levels - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/Week4SomethingAwesome/
 
 6. Finalising document structure - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeDocumentsFinalisation/
+
+7. Starting my first sprint - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeSprint1SecurityThroughObscurity/
 
 <br>
 
