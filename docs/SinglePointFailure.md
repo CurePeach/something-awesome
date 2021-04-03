@@ -4,24 +4,20 @@ The single point of failure level will test the user's ability to evaluate a sit
 
 The level will have a numerous amount of clickable objects. When one object is clicked, an attempt will be spent, and each player only has five attempts across the entire series of different situations. 
 
-## Cinderella
+## Cinderella (Grimm version)
 
-When the prince is searching across the kingdom for Cinderella, his only way of finding her is the glass slipper she left behind. However, that is also how he is filtering through the girls of the kingdom. He lets them try on the shoe and if it fits, he will marry them and if it doesn't, he will keep looking.
+The story of Cinderella is about a kind girl who is bullied by her family. She is forced to work menial chores and is not allowed to have any luxuries or leisure. To save her from the life of a slave, her kindness is rewarded through a magic hazel tree and white doves which grant her any wish. Since she is so kind, she always returns the gifts the tree gave her such as the dresses and slippers she wears to the prince's ball. One day, she leaves a slipper behind and this is the prince's only clue to find her.
 
 **Recommendations for the attacker**:
 
-- Break the shoe.
+Her family want to keep Cinderella as a slave for their own benefit but also because they are rotten and cruel. They are the attackers in the story but they can approach this from two angles.
 
-- Swap the shoe when he isn't looking.
+1. They want to ruin Cinderella's life, and don't care much about the prince.
 
-- Attack the prince. You can threaten or blackmail him because he is coming to everyone's houses.
+- The prince searches for her by using a shoe. Even if they didn't know it was Cinderella who owned the shoe, they could have destroyed it so no one could have the prince, and on the off chance it was Cinderella, that would be great. They would have broken her hopes even more.
+- They could have locked her up so there was no way that she could try on the shoe. The single point of failure in the turning point of her life is her trying on the shoe. Her family can attack the shoe or they can attack her. By locking her up and pretending she doesn't exist, there is no way for her to escape. Especially because her wishes only work when she is under the tree.
 
-- Become a better person so he will pick you instead. Instead of trying on the shoe, show him around town.
+2. They want the prince all to themselves. It's a bonus if they make Cinderella unhappy.
 
-**Recommendations for the defender**:
-
-- Make copies of the shoe so the information isn't lost if the shoe is broken.
-
-- Find the other shoe. Shoes come in pairs.
-
-- Hold another ball.
+- In the story, the two stepsisters of Cinderella actually chop their toes and heel respectively to fit the shoe. However, the birds that Cinderella had befriended warned the prince of the blood in the shoe. This could've been avoided by just wrapping their feet in bandages. When the prince asks why their feet are wrapped, they could reply with "My feet were sore from dancing with you yesterday."
+- They could become a better person and make him fall in love with them instead. Show him around the estate, bake him some bread and just court him. There are extra points because Cinderella will watch you from her window and he'll never know the girl he danced with is right under his nose.
