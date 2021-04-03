@@ -17,7 +17,7 @@ class HomeScreen extends Phaser.Scene {
     this.add.text(400, 400, "Single point of failure").setOrigin(0.5);
     spofLink.setInteractive();
     spofLink.on("pointerdown", () => {
-      console.log("Clicked!");
+      this.scene.start("SPOFScreen");
     });
 
     const seLink = this.add.rectangle(400, 450, 400, 30, this.boxColour);

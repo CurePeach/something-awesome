@@ -11,7 +11,8 @@ const config = {
   backgroundColor: 0x006884,
   scene: [
     HomeScreen,
-    STOScreen
+    STOScreen,
+    SPOFScreen
   ]
 };
 
