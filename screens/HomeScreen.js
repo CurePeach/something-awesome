@@ -11,7 +11,15 @@ class HomeScreen extends Phaser.Scene {
     this.boxColour = 0x053D57;
   }
 
+  preload() {
+    this.load.image("logo", "assets/logo.png");
+  }
+
   create() {
+    const logo = this.add.image(400, 250, "logo");
+    logo.setOrigin(0.5);
+    logo.scale = 0.5;
+
     // Links to the different levels
     const spofLink = this.add.rectangle(400, 400, 400, 30, this.boxColour);
     this.add.text(400, 400, "Single point of failure").setOrigin(0.5);
