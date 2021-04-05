@@ -2,6 +2,8 @@
 
 Taskboard: https://trello.com/b/5kBcWdgd
 
+Colour palette: https://www.canva.com/colors/color-palettes/strong-and-curved/
+
 <br>
 
 ## Masterlist of Blog Posts
