@@ -10,11 +10,11 @@
  */
 
 class SPOFScreen extends Phaser.Scene {
-    constructor() {
-        super("SPOFScreen");
-    }
+  constructor() {
+    super("SPOFScreen");
+  }
 
-    create() {
-        this.add.text(10, 10, "Single Point of Failure");
-    }
+  create() {
+    this.add.text(10, 10, "Single Point of Failure");
+  }
 }
