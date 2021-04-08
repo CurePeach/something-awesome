@@ -6,9 +6,9 @@
 
 /**
  * Relevant tutorials:
- * - https://www.thepolyglotdeveloper.com/2020/09/switch-between-scenes-phaser-game/
- * - http://labs.phaser.io/edit.html?src=src%5Cscenes%5Cdrag%20scenes%20demo.js
- * - https://www.stephengarside.co.uk/blog/phaser-3-center-text-in-middle-of-screen/
+ * - Switching between scenes: https://www.thepolyglotdeveloper.com/2020/09/switch-between-scenes-phaser-game/
+ * - Creating new windows: http://labs.phaser.io/edit.html?src=src%5Cscenes%5Cdrag%20scenes%20demo.js
+ * - Centreing text: https://www.stephengarside.co.uk/blog/phaser-3-center-text-in-middle-of-screen/
  */
 
 class STOScreen extends Phaser.Scene {
