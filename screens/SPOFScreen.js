@@ -18,6 +18,9 @@ class SPOFScreen extends Phaser.Scene {
     this.buttonTextStyle = {
       align: "center"
     };
+
+    this.completeColour = 0x97bcc7;
+    this.incompleteColour = 0x053D57;
   }
 
   create() {
@@ -40,7 +43,7 @@ class SPOFScreen extends Phaser.Scene {
       startText.destroy();
       howToButton.destroy();
       howToText.destroy();
-      startLevelOne();
+      this.startLevel(1);
     });
 
     // Add interactivity to "how to play" button
@@ -50,7 +53,25 @@ class SPOFScreen extends Phaser.Scene {
       startText.destroy();
       howToButton.destroy();
       howToText.destroy();
-      startTutorial();
+      this.startTutorial();
     });
+
+    // Add level indicator
+    const levelOne = this.add.circle(650, 20, 10, this.incompleteColour);
+    const levelTwo = this.add.circle(675, 20, 10, this.incompleteColour);
+    const levelThree = this.add.circle(700, 20, 10, this.incompleteColour);
+    const levelFour = this.add.circle(725, 20, 10, this.incompleteColour);
+    const levelFive = this.add.circle(750, 20, 10, this.incompleteColour);
+
+    // Add lives indicator
+    const lifeOne = this.add.circle(750, 575, 10, this.completeColour);
+    const lifeTwo = this.add.circle(750, 550, 10, this.completeColour);
+    const lifeThree = this.add.circle(750, 525, 10, this.completeColour);
+  }
+  
+  startTutorial() {
+  }
+
+  startLevel(level) {
   }
 }
