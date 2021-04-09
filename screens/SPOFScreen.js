@@ -272,8 +272,27 @@ class SPOFScreen extends Phaser.Scene {
         confirmButton.destroy();
         confirmText.destroy();
         this.removeInfoWindow(info);
-        this.startLevel(level + 1);
+        this.finishLevel(level);
       }
+    })
+  }
+
+  finishLevel(level) {
+    const info = this.createInfoWindow(`Level ${level} explanation`);
+    info.addBodyText(this.options[level - 1].explanation);
+
+    // Create the next button
+    const nextButton = this.add.rectangle(this.bottomButtonX, this.bottomButtonY, 100, 100, this.buttonColour);
+    const nextText = this.add.text(this.bottomButtonX, this.bottomButtonY, "Next", this.buttonTextStyle);
+    nextText.setOrigin(0.5);
+
+    // Add interactivity to next button
+    nextButton.setInteractive();
+    nextButton.once("pointerup", () => {
+      nextButton.destroy();
+      nextText.destroy();
+      this.removeInfoWindow(info);
+      this.startLevel(level + 1);
     })
   }
 
@@ -296,7 +315,6 @@ class SPOFScreen extends Phaser.Scene {
     let xCoord = info.window.x + 80;
     const yCoord = info.window.y + 330;
     for (const choice of options.choices) {
-      console.log(choice);
       const choiceRect = info.add.rectangle(xCoord, yCoord, 25, 25, this.choiceColour);
       choiceRect.setInteractive();
       choiceRect.on("pointerup", () => {
