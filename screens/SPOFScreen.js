@@ -21,12 +21,14 @@ class SPOFScreen extends Phaser.Scene {
 
     this.completeColour = 0x97bcc7;
     this.incompleteColour = 0x053D57;
+    this.choiceColour = 0x006884;
 
     this.bottomButtonX = 400;
     this.bottomButtonY = 520;
 
     this.levels = [];
     this.lives = [];
+    this.livesLeft = 3;
 
     this.scenarios = [
       "You are Cinderella's father. Your wife has just passed away. How\n" +
@@ -52,10 +54,10 @@ class SPOFScreen extends Phaser.Scene {
 
     this.options = [
       {
-        options: [
-          "Marry another woman so she has a mother figure in her life.",
-          "Treat her extra special to make up for her missing mother.",
-          "Leave Cinderella by herself so you can grieve in peace."
+        choices: [
+          "A. Marry another woman so she has a mother figure in her life.",
+          "B. Treat her extra special to make up for her missing mother.",
+          "C. Leave Cinderella by herself so you can grieve in peace."
         ],
         correct: 1,
         explanation: 
@@ -64,12 +66,12 @@ class SPOFScreen extends Phaser.Scene {
           "around."
       },
       {
-        options: [
-          "Be kind and pray to God for the strength to carry on.",
-          "Tell your father the situation and pray he does something.",
-          "Next time your sisters make a mess and kick you to clean it up,\n" +
+        choices: [
+          "A. Be kind and pray to God for the strength to carry on.",
+          "B. Tell your father the situation and pray he does something.",
+          "C. Next time your sisters make a mess and kick you to clean it up,\n" +
           "tell them to do it themselves and cry at your mother's grave.",
-          "Run away."
+          "D. Run away."
         ],
         correct: 0,
         explanation:
@@ -77,15 +79,15 @@ class SPOFScreen extends Phaser.Scene {
           "kindness and her strength so option A was the correct one."
       },
       {
-        options: [
-          "Hold another ball and find a suitable noble girl.",
-          "Sit with your son and convince him to do something about it.",
-          "Lock the prince in his room for even thinking about marrying a\n" + 
+        choices: [
+          "A. Hold another ball and find a suitable noble girl.",
+          "B. Sit with your son and convince him to do something about it.",
+          "C. Lock the prince in his room for even thinking about marrying a\n" + 
           "girl of unknown background.",
-          "The neighbouring kingdom is looking for a husband for one of\n" +
+          "D. The neighbouring kingdom is looking for a husband for one of\n" +
           "their princesses and your son hasn't noticed her in either of the\n" +
           "previous balls.",
-          "Find the girl and bribe or blackmail her to reject your son."
+          "E. Find the girl and bribe or blackmail her to reject your son."
         ],
         correct: 4,
         explanation:
@@ -97,11 +99,11 @@ class SPOFScreen extends Phaser.Scene {
           "his infatuation."
       }, 
       {
-        options: [
-          "Chop your daughter's feet so her feet fit in that puny shoe of his.",
-          "Distract the prince with your kindness so you have the opportunity\n" + 
+        choices: [
+          "A. Chop your daughter's feet so her feet fit in that puny shoe of his.",
+          "B. Distract the prince with your kindness so you have the opportunity\n" + 
           "to steal that shoe. Then, you introduce him to your daughters.",
-          "Take the shoe from him and say you're going to check with your\n" +
+          "C. Take the shoe from him and say you're going to check with your\n" +
           "daughters."
         ],
         correct: 1,
@@ -114,12 +116,12 @@ class SPOFScreen extends Phaser.Scene {
           "daughters from attaining fame and riches."
       },
       {
-        options: [
-          "When he returns to the estate, dance with the girl before bringing her\n" +
+        choices: [
+          "A. When he returns to the estate, dance with the girl before bringing her\n" +
           "back to the palace.",
-          "Ask her what he said to her the last time they danced.",
-          "Have a conversation with her and see if she is the same person.",
-          "Ask for the other shoe."
+          "B. Ask her what he said to her the last time they danced.",
+          "C. Have a conversation with her and see if she is the same person.",
+          "D. Ask for the other shoe."
         ],
         correct: 3,
         explanation:
@@ -242,19 +244,36 @@ class SPOFScreen extends Phaser.Scene {
 
   setUpLevel(level) {
     const info = this.createInfoWindow(`Level ${level} options`);
+    this.addMultiChoice(info, this.options[level - 1]);
 
     // Create the confirm button
     const confirmButton = this.add.rectangle(this.bottomButtonX, this.bottomButtonY, 100, 100, this.buttonColour);
     const confirmText = this.add.text(this.bottomButtonX, this.bottomButtonY, "Confirm", this.buttonTextStyle);
-    nextText.setOrigin(0.5);
+    confirmText.setOrigin(0.5);
 
-    // Add interactivity to next button
+    // Add interactivity to confirm button
     confirmButton.setInteractive();
-    confirmButton.once("pointerup", () => {
-      confirmButton.destroy();
-      confirmButton.destroy();
-      this.removeInfoWindow(info);
-      this.startLevel(level + 1);
+    confirmButton.on("pointerup", () => {
+      if (info.selected === -1) {
+        alert("Select an option");
+      } else {
+        // Check the answer
+        if (info.selected != this.options[level - 1].correct && this.livesLeft > 0) {
+          const indicator = this.lives[this.livesLeft - 1];
+          const newIndicator = this.add.circle(indicator.x, indicator.y, 10, this.incompleteColour);
+          this.lives[this.livesLeft - 1] = newIndicator;
+          indicator.destroy();
+          this.livesLeft -= 1;
+
+          if (this.livesLeft === 0) {
+            alert("Game over");
+          }
+        }
+        confirmButton.destroy();
+        confirmText.destroy();
+        this.removeInfoWindow(info);
+        this.startLevel(level + 1);
+      }
     })
   }
 
@@ -269,6 +288,27 @@ class SPOFScreen extends Phaser.Scene {
   removeInfoWindow(info) {
     this.scene.remove(info.title);
   }
+
+  addMultiChoice(info, options) {
+    const paragraph = options.choices.join("\n\n");
+    info.addBodyText(paragraph);
+
+    let xCoord = info.window.x + 80;
+    const yCoord = info.window.y + 330;
+    for (const choice of options.choices) {
+      console.log(choice);
+      const choiceRect = info.add.rectangle(xCoord, yCoord, 25, 25, this.choiceColour);
+      choiceRect.setInteractive();
+      choiceRect.on("pointerup", () => {
+        info.selected = options.choices.indexOf(choice);
+      });
+      info.choices.push(choiceRect);
+
+      const choiceText = info.add.text(xCoord, yCoord, choice[0], info.titleStyle);
+      choiceText.setOrigin(0.5);
+      xCoord += 80;
+    }
+  }
 }
 
 class InfoWindow extends Phaser.Scene {
@@ -278,16 +318,20 @@ class InfoWindow extends Phaser.Scene {
     this.title = title;
     this.window = window;
     this.bgColour = 0x053D57;
+
+    this.titleStyle = {
+      fontSize: "20px"
+    }
+
+    this.choices = [];
+    this.selected = -1;
   }
 
   create() {
     const bg = this.add.rectangle(this.window.x, this.window.y, 700, 400, this.bgColour);
     bg.setOrigin(0);
 
-    const titleStyle = {
-      fontSize: "20px"
-    };
-    this.add.text(this.window.x + 25, this.window.y + 25, this.title, titleStyle);
+    this.add.text(this.window.x + 25, this.window.y + 25, this.title, this.titleStyle);
   }
 
   addBodyText(string) {
