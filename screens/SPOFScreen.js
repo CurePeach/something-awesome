@@ -57,21 +57,85 @@ class SPOFScreen extends Phaser.Scene {
     });
 
     // Add level indicator
-    const levelOne = this.add.circle(650, 20, 10, this.incompleteColour);
-    const levelTwo = this.add.circle(675, 20, 10, this.incompleteColour);
-    const levelThree = this.add.circle(700, 20, 10, this.incompleteColour);
-    const levelFour = this.add.circle(725, 20, 10, this.incompleteColour);
-    const levelFive = this.add.circle(750, 20, 10, this.incompleteColour);
+    const levelOne = this.add.circle(625, 30, 10, this.incompleteColour);
+    const levelTwo = this.add.circle(650, 30, 10, this.incompleteColour);
+    const levelThree = this.add.circle(675, 30, 10, this.incompleteColour);
+    const levelFour = this.add.circle(700, 30, 10, this.incompleteColour);
+    const levelFive = this.add.circle(725, 30, 10, this.incompleteColour);
 
     // Add lives indicator
-    const lifeOne = this.add.circle(750, 575, 10, this.completeColour);
-    const lifeTwo = this.add.circle(750, 550, 10, this.completeColour);
-    const lifeThree = this.add.circle(750, 525, 10, this.completeColour);
+    const lifeOne = this.add.circle(770, 440, 10, this.completeColour);
+    const lifeTwo = this.add.circle(770, 415, 10, this.completeColour);
+    const lifeThree = this.add.circle(770, 390, 10, this.completeColour);
   }
   
   startTutorial() {
+    // Create the window with the tutorial
+    const info = this.createInfoWindow("Tutorial");
+    info.addBodyText(
+      "1. You will be presented with a scenario. Read the scenario\n" + 
+      "carefully and consider what its strongest single point of\n" +
+      "failure is.\n" +
+      "2. Once you are finished reading, press the \"Next\" button.\n" +
+      "3. You will be presented with a series of pictures. Click the\n" + 
+      "picture that is its strongest single point of failure.\n" +
+      "\n" +
+      "Note: In the top right corner, the circles will determine your\n" +
+      "progress in the game and the circles in the bottom right corner\n" + 
+      "will determine how many lives you have left."
+    );
+
+    // Readd the start button
+    const startButton = this.add.rectangle(400, 520, 100, 100, this.buttonColour);
+    const startText = this.add.text(400, 520, "Start", this.buttonTextStyle)
+    startText.setOrigin(0.5);
+
+    // Add interactivity to start button
+    startButton.setInteractive();
+    startButton.once("pointerup", () => {
+      startButton.destroy();
+      startText.destroy();
+      this.removeInfoWindow(info);
+      this.startLevel(1);
+    });
   }
 
   startLevel(level) {
+  }
+
+  createInfoWindow(title) {
+    const window = this.add.zone(50, 50);
+    const info = new InfoWindow(title, window);
+    this.scene.add(title, info, true);
+
+    return info;
+  }
+
+  removeInfoWindow(info) {
+    this.scene.remove(info.title);
+  }
+}
+
+class InfoWindow extends Phaser.Scene {
+  constructor(title, window) {
+    super(title);
+
+    this.title = title;
+    this.window = window;
+    this.bgColour = 0x053D57;
+  }
+
+  create() {
+    const bg = this.add.rectangle(this.window.x, this.window.y, 700, 400, this.bgColour);
+    bg.setOrigin(0);
+
+    const titleStyle = {
+      fontSize: "20px"
+    };
+    this.add.text(this.window.x + 25, this.window.y + 25, this.title, titleStyle);
+  }
+
+  addBodyText(string) {
+    this.add.text(this.window.x + 25, this.window.y + 75, string);
   }
 }
