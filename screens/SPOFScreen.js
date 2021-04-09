@@ -21,6 +21,32 @@ class SPOFScreen extends Phaser.Scene {
 
     this.completeColour = 0x97bcc7;
     this.incompleteColour = 0x053D57;
+
+    this.bottomButtonX = 400;
+    this.bottomButtonY = 520;
+
+    this.levels = [];
+    this.lives = [];
+
+    this.scenarios = [
+      "You are Cinderella's father. Your wife has just passed away. How\n" +
+      "can you make sure your daughter lives a good life?",
+      "You are Cinderella. Your father has just remarried. His new wife\n" + 
+      "is cruel to you, and so are her daughters. They have stolen all\n" +
+      "your belongings, and all you have left to yourself is your mother's\n" +
+      "grave. What is there left to do?",
+      "You are the king. Your son has held two balls two nights in a row\n" + 
+      "and can't help but gush about this one girl who he knows little to\n" + 
+      "nothing about. What do you tell him to do?",
+      "You are Cinderella's stepmother. A prince has appeared at your\n" + 
+      "doorstep saying he's in love with one of your daughters. You know\n" +
+      "YOUR daughters never got the prince's attention because he was\n" +
+      "dancing with someone else all night. How do you convince him your\n" +
+      "daughters are the one?",
+      "You are the prince. You were in the carriage with a woman you\n" +
+      "never danced with as evidenced by the blood in her shoe. How do you\n" +
+      "make sure this never happens again?"
+    ];
   }
 
   create() {
@@ -57,16 +83,20 @@ class SPOFScreen extends Phaser.Scene {
     });
 
     // Add level indicator
-    const levelOne = this.add.circle(625, 30, 10, this.incompleteColour);
-    const levelTwo = this.add.circle(650, 30, 10, this.incompleteColour);
-    const levelThree = this.add.circle(675, 30, 10, this.incompleteColour);
-    const levelFour = this.add.circle(700, 30, 10, this.incompleteColour);
-    const levelFive = this.add.circle(725, 30, 10, this.incompleteColour);
+    let xCoord = 625;
+    for (let i = 0; i < 5; i += 1) {
+      const level = this.add.circle(xCoord, 30, 10, this.incompleteColour);
+      this.levels.push(level);
+      xCoord += 25;
+    }
 
     // Add lives indicator
-    const lifeOne = this.add.circle(770, 440, 10, this.completeColour);
-    const lifeTwo = this.add.circle(770, 415, 10, this.completeColour);
-    const lifeThree = this.add.circle(770, 390, 10, this.completeColour);
+    let yCoord = 430;
+    for (let i = 0; i < 3; i += 1) {
+      const life = this.add.circle(770, yCoord, 10, this.completeColour);
+      this.lives.push(life);
+      yCoord -= 25;
+    }
   }
   
   startTutorial() {
@@ -77,17 +107,19 @@ class SPOFScreen extends Phaser.Scene {
       "carefully and consider what its strongest single point of\n" +
       "failure is.\n" +
       "2. Once you are finished reading, press the \"Next\" button.\n" +
-      "3. You will be presented with a series of pictures. Click the\n" + 
-      "picture that is its strongest single point of failure.\n" +
+      "3. You will be presented with a series of options. Select the\n" + 
+      "option that is its strongest single point of failure.\n" +
       "\n" +
-      "Note: In the top right corner, the circles will determine your\n" +
-      "progress in the game and the circles in the bottom right corner\n" + 
-      "will determine how many lives you have left."
+      "Note:\n" + 
+      "- In the top right corner, the circles will determine your\n" +
+      "progress in the game.\n" + 
+      "- The circles in the bottom right corner will determine how many\n" + 
+      "lives you have left."
     );
 
-    // Readd the start button
-    const startButton = this.add.rectangle(400, 520, 100, 100, this.buttonColour);
-    const startText = this.add.text(400, 520, "Start", this.buttonTextStyle)
+    // Create the start button
+    const startButton = this.add.rectangle(this.bottomButtonX, this.bottomButtonY, 100, 100, this.buttonColour);
+    const startText = this.add.text(this.bottomButtonX, this.bottomButtonY, "Start", this.buttonTextStyle);
     startText.setOrigin(0.5);
 
     // Add interactivity to start button
@@ -101,6 +133,45 @@ class SPOFScreen extends Phaser.Scene {
   }
 
   startLevel(level) {
+    const indicator = this.levels[level - 1];
+    const newIndicator = this.add.circle(indicator.x, indicator.y, 10, this.completeColour);
+    this.levels[level - 1] = newIndicator;
+    indicator.destroy();
+
+    const info = this.createInfoWindow(`Level ${level}`);
+    info.addBodyText(this.scenarios[level - 1]);
+
+    // Create the next button
+    const nextButton = this.add.rectangle(this.bottomButtonX, this.bottomButtonY, 100, 100, this.buttonColour);
+    const nextText = this.add.text(this.bottomButtonX, this.bottomButtonY, "Next", this.buttonTextStyle);
+    nextText.setOrigin(0.5);
+
+    // Add interactivity to next button
+    nextButton.setInteractive();
+    nextButton.once("pointerup", () => {
+      nextButton.destroy();
+      nextText.destroy();
+      this.removeInfoWindow(info);
+      this.setUpLevel(level);
+    })
+  }
+
+  setUpLevel(level) {
+    const info = this.createInfoWindow(`Level ${level} options`);
+
+    // Create the next button
+    const nextButton = this.add.rectangle(this.bottomButtonX, this.bottomButtonY, 100, 100, this.buttonColour);
+    const nextText = this.add.text(this.bottomButtonX, this.bottomButtonY, "Next", this.buttonTextStyle);
+    nextText.setOrigin(0.5);
+
+    // Add interactivity to next button
+    nextButton.setInteractive();
+    nextButton.once("pointerup", () => {
+      nextButton.destroy();
+      nextText.destroy();
+      this.removeInfoWindow(info);
+      this.startLevel(level + 1);
+    })
   }
 
   createInfoWindow(title) {
