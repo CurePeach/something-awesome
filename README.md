@@ -24,6 +24,8 @@ Colour palette: https://www.canva.com/colors/color-palettes/strong-and-curved/
 
 8. Sprint 1 complete! - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeSprint1Complete/
 
+9. Sprint 2 complete! - https://www.openlearning.com/u/clarissatatang-qohwa4/blog/SomethingAwesomeSprint2Complete/
+
 <br>
 
 ## How to set up for testing
