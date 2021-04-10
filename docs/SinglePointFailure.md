@@ -59,3 +59,7 @@ If Eurydice is not corporeal, this makes it more difficult, but these recommenda
 - Instead of communicating with him directly, she could ask the other beings around them. They are in the Underworld so there are many ghosts and undead creatures and spirits around them that Eurydice and Orpheus might be able to communicate through. This kind of communication can be easily tampered with so they should communicate in something that the man (or in this case, spirit) in the middle would find difficult to tamper with. This could be a code they made up together for fun, secret phrases that mean nothing to other people but everything to them or even in song.
 
 **Recommendations for the defender**:
+
+The defender in this story is Hades. He wants to maintain his Underworld by ensuring the dead stay dead and the alive stay alive. Hades doesn't want to kill Orpheus because it was not Orpheus' time to go, so killing Orpheus is not the right method. 
+
+- To convince Orpheus to look back, he can send the spirits of the Underworld to him. These spirits will amplify Orpheus' insecurities and wariness of Hades and Orpheus will then look back to just make sure Hades isn't playing him for a fool. Here, Hades will be playing on Orpheus' humanity as the single point of failure - the one thing that will doom his mission is himself.
