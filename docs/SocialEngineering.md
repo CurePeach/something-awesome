@@ -6,7 +6,7 @@ There will be a meter that starts at a certain percentage in the level. This met
 
 ## What Began the Trojan War
 
-It is believed the Greek gods were the ones that catalysed the Trojan war, and what it took was a little social engineering. Similar to the story of Sleeping Beauty, it all started with a "gift" from an unwanted guest. This time the unwanted guest was Eris, the goddess of discord, and her gift was a golden apple with the inscription "To the fairest". Three goddesses, Athena, Hera and Aphrodite, wanted that apple. Eris being the goddess of discord really knew how to reign chaos with little to no effort on her part. The other gods were afraid to choose so they employed a human to do so. This human was Paris of Troy, and he couldn't choose either, so instead each goddess resorted to bribes. Athena offered him wisdom, skill in battle and the abilities of all the greatest warriors, Hera offered him political power and control of all of Asia and Aphrodite offered him the love of the most beautiful mortal woman in the world. Aphrodite employed her own social engineering here preying on the true mortal desire. Since the most beautiful woman (Helen of Sparta) was already married, this sparked the Trojan War.
+It is believed the Greek gods were the ones that catalysed the Trojan war, and what it took was a little social engineering. Similar to the story of Sleeping Beauty, it all started with a "gift" from an unwanted guest. This time the unwanted guest was Eris, the goddess of discord, and her gift was a golden apple with the inscription "To the fairest". Three goddesses, Athena, Hera and Aphrodite, wanted that apple. Eris being the goddess of discord really knew how to reign chaos with little to no effort on her part. The other gods were afraid to choose so they employed a human to do so. This human was Paris of Troy, and he couldn't choose either, so instead each goddess resorted to bribes. Athena offered him wisdom, skill in battle and the abilities of all the greatest warriors, Hera offered him political power and control of all of Asia and Aphrodite offered him the love of the most beautiful mortal woman in the world. Aphrodite employed her own social engineering here preying on the his deepest desire. Since the most beautiful woman (Helen of Sparta) was already married, this sparked the Trojan War.
 
 **Recommendations for the attacker**:
 
@@ -24,6 +24,7 @@ What could Athena, Hera and Aphrodite have done to not be prey of Eris' social e
 
 What could Paris have done to not be prey of Aphrodite's social engineering?
 
-- 
+- Aphrodite's gift in my opinion was a big scam. I doubt in Paris' wildest imaginations, he would be in the middle of a war between nations. Whenever anyone is approached with something that even remotely smells like a scam, they should ask for the details and compare with everything else in the market. If Paris asked for what would happen when he accepted each gift, would his decision have changed?
 
 ## The Emperor's New Clothes
+
