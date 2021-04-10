@@ -12,7 +12,8 @@ const config = {
   scene: [
     HomeScreen,
     STOScreen,
-    SPOFScreen
+    SPOFScreen,
+    SEScreen
   ]
 };
 

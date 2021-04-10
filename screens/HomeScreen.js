@@ -32,7 +32,7 @@ class HomeScreen extends Phaser.Scene {
     this.add.text(400, 450, "Social engineering").setOrigin(0.5);
     seLink.setInteractive();
     seLink.on("pointerdown", () => {
-      console.log("Clicked!");
+      this.scene.start("SEScreen");
     });
 
     const stoLink = this.add.rectangle(400, 500, 400, 30, this.boxColour);
