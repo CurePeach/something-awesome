@@ -10,7 +10,11 @@ class SEScreen extends Phaser.Scene {
   }
 
   create() {
-    this.add.text(10, 10, "Social Engineering");
-    this.add.text(10, 35, "To be added");
+    const window = this.add.zone(50, 25);
+    const backButton = new BackButton(window);
+    this.scene.add("BackButton", backButton, true);
+
+    this.add.text(100, 15, "Social Engineering");
+    this.add.text(15, 50, "To be added");
   }
 }

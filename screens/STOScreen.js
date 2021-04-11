@@ -39,7 +39,11 @@ class STOScreen extends Phaser.Scene {
   }
 
   create() {
-    this.add.text(10, 10, "Security Through Obscurity");
+    const window = this.add.zone(50, 25);
+    const backButton = new BackButton(window);
+    this.scene.add("BackButton", backButton, true);
+    
+    this.add.text(100, 15, "Security Through Obscurity");
 
     // Set up birds that tell clues
     const blueBird = this.add.image(150, 200, "blue");

@@ -9,11 +9,12 @@ class BackButton extends Phaser.Scene {
     super("BackButton");
 
     this.window = window;
+    this.buttonColour = 0x053D57;
   }
 
   create() {
-    const button = this.add.rectangle(window.x, window.y, 80, 30);
-    const buttonText = this.add.text(window.x, window.y, "Back");
+    const button = this.add.rectangle(this.window.x, this.window.y, 80, 30, this.buttonColour);
+    const buttonText = this.add.text(this.window.x, this.window.y, "Back");
     buttonText.setOrigin(0.5);
   }
 }
