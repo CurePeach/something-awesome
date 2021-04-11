@@ -50,4 +50,7 @@ The attackers who are socially engineering are the two scam artists. In most tel
 
 **Recommendations for the defender**:
 
-There are many different defenders in this story including the king, the servants in the royal palace and the townspeople. What could they have done to ensure they weren't tricked so easily?
+There are many different defenders in this story including the king, the servants in the royal palace and the townspeople. What could they have done to ensure they weren't tricked?
+
+- Emperors and other royalty in stories nowadays are depicted as cautious, suspicious of everything and strict. This emperor was not and this was his downfall. Even in general, if you know you have something someone wants, you should be wary of them. If the emperor was wary because he had wealth the scam artists wanted, he wouldn't have been tricked so easily. By asking more about these clothes, asking to feel them because even if he couldn't see them, they should provide the feeling of what other clothes provide, he could have made a better, more informed decision.
+- The servants in the royal palace and the townspeople could have spoken to each other about it. Surely in the fairytale, they had friends they could trust and speak to about these things. If they knew more people were in the same boat as them, they could have reversed the crowd mentality to "Everyone else can see it, why can I?" to "No one can't see it, this is stupid!"
