@@ -136,6 +136,7 @@ class SPOFScreen extends Phaser.Scene {
   create() {
     const window = this.add.zone(50, 25);
     const backButton = new BackButton(window);
+    backButton.addFunctionality(this);
     this.scene.add("BackButton", backButton, true);
 
     this.add.text(100, 15, "Single Point of Failure");

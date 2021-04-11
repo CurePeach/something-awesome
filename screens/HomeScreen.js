@@ -6,7 +6,7 @@
 
 class HomeScreen extends Phaser.Scene {
   constructor() {
-    super("TitleScreen");
+    super("HomeScreen");
 
     this.boxColour = 0x053D57;
   }
