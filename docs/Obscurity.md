@@ -1,4 +1,4 @@
-# Security through Obscurity
+# Security Through Obscurity
 
 The security through obscurity level will test the player's ability to navigate clues and formulate them into an answer. 
 
